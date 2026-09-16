@@ -1,0 +1,40 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "SPROUT",
+      "hasCanvas": false,
+      "bodyTextLen": 3822,
+      "bodyTextHash": "2b808274bd93d3b94b63585cc4ad9ab447ecef4ba56176f4420a3fb0cab72591",
+      "bodyTextPrefix": "SPROUT Grove Mission Where to green Early @sproutonchain EARLY D",
+      "horizontalOverflow": false,
+      "consoleErrors": [
+        "A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.\n- Date formatting in a user's locale which doesn't match the server.\n- External changing data without sending a snapshot of it along with the HTML.\n- Invalid HTML tag nesting.\n\nIt can also happen if the client has a browser extension installed which messes with the HTML before React loaded.\n\n%s%s https://react.dev/link/hydration-mismatch \n\n  ...\n    <SafeFragment fallback={null}>\n      <CatchBoundary getResetKey={function getResetKey} errorComponent={function AppErrorComponent} ...>\n        <SafeFragment fallback={function fallback}>\n          <MatchInnerImpl match={{id:\"//\",ssr:true, ...}}>\n            <Lazy>\n              <Home>\n                <main className=\"min-h-dvh ...\">\n                  <SiteNav>\n                  <Hero>\n                  <Mission>\n                  <Grove>\n                  <How>\n                  <Poll>\n                  <Manifesto>\n                  <Join>\n                    <section id=\"join\" className=\"border-t b...\">\n                      <div className=\"mx-auto gr...\">\n                        <div>\n                          <p>\n                          <h2>\n                          <p>\n                          <div className=\"mt-8 max-w-md\">\n                            <GroveName>\n                              <form className=\"flex flex-...\" onSubmit={function onSubmit}>\n                                <label>\n                                <input\n                                  id=\"gardener\"\n                                  value=\"\"\n                                  onChange={function onChange}\n                                  placeholder=\"Name your grove\"\n                                  maxLength={24}\n                                  className=\"h-11 min-w-0 flex-1 rounded-lg bg-surface px-3 text-sm text-fg shadow-[va...\"\n-                                 style={{caret-color:\"transparent\"}}\n                                >\n                                ...\n                          ...\n                        ...\n                  ...\n"
+      ],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "SPROUT",
+      "hasCanvas": false,
+      "bodyTextLen": 3772,
+      "bodyTextHash": "7b38b005da12634cf685de29ba72d07cd25c29ea88c35bf14c4db2fb210c8203",
+      "bodyTextPrefix": "SPROUT EARLY DAYS. STRONG ROOTS. Most projects launch a token. W",
+      "horizontalOverflow": false,
+      "consoleErrors": [
+        "A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.\n- Date formatting in a user's locale which doesn't match the server.\n- External changing data without sending a snapshot of it along with the HTML.\n- Invalid HTML tag nesting.\n\nIt can also happen if the client has a browser extension installed which messes with the HTML before React loaded.\n\n%s%s https://react.dev/link/hydration-mismatch \n\n  ...\n    <SafeFragment fallback={null}>\n      <CatchBoundary getResetKey={function getResetKey} errorComponent={function AppErrorComponent} ...>\n        <SafeFragment fallback={function fallback}>\n          <MatchInnerImpl match={{id:\"//\",ssr:true, ...}}>\n            <Lazy>\n              <Home>\n                <main className=\"min-h-dvh ...\">\n                  <SiteNav>\n                  <Hero>\n                  <Mission>\n                  <Grove>\n                  <How>\n                  <Poll>\n                  <Manifesto>\n                  <Join>\n                    <section id=\"join\" className=\"border-t b...\">\n                      <div className=\"mx-auto gr...\">\n                        <div>\n                          <p>\n                          <h2>\n                          <p>\n                          <div className=\"mt-8 max-w-md\">\n                            <GroveName>\n                              <form className=\"flex flex-...\" onSubmit={function onSubmit}>\n                                <label>\n                                <input\n                                  id=\"gardener\"\n                                  value=\"\"\n                                  onChange={function onChange}\n                                  placeholder=\"Name your grove\"\n                                  maxLength={24}\n                                  className=\"h-11 min-w-0 flex-1 rounded-lg bg-surface px-3 text-sm text-fg shadow-[va...\"\n-                                 style={{caret-color:\"transparent\"}}\n                                >\n                                ...\n                          ...\n                        ...\n                  ...\n"
+      ],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
