@@ -1,26 +1,29 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Grove } from "@/components/grove";
-import { Hero } from "@/components/hero";
-import { How } from "@/components/how";
-import { Join } from "@/components/join";
-import { Manifesto } from "@/components/manifesto";
-import { Mission } from "@/components/mission";
-import { Poll } from "@/components/poll";
-import { SiteFooter } from "@/components/site-footer";
 import { SiteNav } from "@/components/site-nav";
+import { Hero } from "@/components/hero";
+import { DigitalToOffline } from "@/components/digital-to-offline";
+import { MilestoneEngine } from "@/components/milestone-engine";
+import { ImpactMapSection } from "@/components/impact-map-section";
+import { Grove } from "@/components/grove";
+import { Poll } from "@/components/poll";
+import { Manifesto } from "@/components/manifesto";
+import { Join } from "@/components/join";
+import { SiteFooter } from "@/components/site-footer";
 import { useGroveHydration } from "@/lib/grove-store";
 
 export const Route = createFileRoute("/")({ component: Home });
 
 function Home() {
   useGroveHydration();
+
   return (
     <main className="min-h-dvh bg-bg text-fg">
       <SiteNav />
       <Hero />
-      <Mission />
+      <DigitalToOffline />
+      <MilestoneEngine />
+      <ImpactMapSection />
       <Grove />
-      <How />
       <Poll />
       <Manifesto />
       <Join />

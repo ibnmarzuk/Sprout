@@ -89,7 +89,6 @@ export function regionLabel(id: RegionId | null): string {
 
 export const manifesto = [
   "Most projects launch a token. We want to grow a narrative.",
-  "SPROUT is an onchain eco-native brand built around community, symbolism, and green momentum.",
   "A small sprout with a big mission: bringing degens together to grow real-world forests.",
   "Grow online. Plant offline.",
   "Early days. Strong roots. If you see it now, you are early.",

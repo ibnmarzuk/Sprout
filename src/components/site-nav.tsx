@@ -2,14 +2,13 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { SproutMark } from "@/components/sprout-mark";
 import { Button } from "@/components/ui/button";
-import { X_HANDLE, X_URL } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { href: "#grove", label: "Grove" },
-  { href: "#mission", label: "Mission" },
-  { href: "#poll", label: "Where to green" },
-  { href: "#join", label: "Early" },
+  { href: "#mission-real", label: "Mission" },
+  { href: "#how-it-works", label: "How It Works" },
+  { href: "#impact-map", label: "Impact Map" },
+  { href: "#join", label: "Community" },
 ];
 
 export function SiteNav() {
@@ -46,21 +45,16 @@ export function SiteNav() {
           <SproutMark />
           <span className="font-display text-lg font-medium tracking-tight">SPROUT</span>
         </a>
-        <div className="hidden items-center gap-1 md:flex">
+        <div className="hidden items-center gap-1.5 md:flex rounded-full border border-border/60 bg-surface/50 px-2 py-1 backdrop-blur-md">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="rounded-md px-3 py-2 text-sm text-muted transition-colors duration-150 hover:text-fg"
+              className="rounded-full px-3.5 py-1.5 text-sm font-medium text-muted transition-colors duration-150 hover:bg-surface-2 hover:text-fg"
             >
               {l.label}
             </a>
           ))}
-          <Button asChild size="sm" className="ml-2">
-            <a href={X_URL} target="_blank" rel="noreferrer">
-              {X_HANDLE}
-            </a>
-          </Button>
         </div>
         <Button
           variant="ghost"
@@ -86,11 +80,6 @@ export function SiteNav() {
                 {l.label}
               </a>
             ))}
-            <Button asChild className="mt-2 w-full">
-              <a href={X_URL} target="_blank" rel="noreferrer" onClick={() => setOpen(false)}>
-                Follow {X_HANDLE}
-              </a>
-            </Button>
           </div>
         </div>
       ) : null}

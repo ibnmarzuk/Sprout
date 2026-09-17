@@ -23,6 +23,8 @@ interface GroveState {
   setGardener: (name: string) => void;
   plant: (x: number, y: number) => { ok: true } | { ok: false; reason: string };
   water: (id: string) => { ok: true; stage: Stage } | { ok: false; reason: string };
+  waterAll: () => void;
+  clearGrove: () => void;
   setVote: (id: RegionId) => void;
 }
 
@@ -88,6 +90,19 @@ export const useGrove = create<GroveState>()(
           ),
         });
         return { ok: true, stage };
+      },
+      waterAll: () => {
+        const { plants } = get();
+        set({
+          plants: plants.map((p) => ({
+            ...p,
+            stage: (Math.min(3, p.stage + 1)) as Stage,
+            wateredAt: Date.now(),
+          })),
+        });
+      },
+      clearGrove: () => {
+        set({ plants: [] });
       },
       setVote: (id) => set({ vote: id }),
     }),

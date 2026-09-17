@@ -66,9 +66,8 @@ export function Grove() {
               {shownName ? `${shownName}'s grove` : "Plant something that stays."}
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted">
-              This is a first plot — a private grove that lives on your device.
-              When the token bridges to real land, these roots are how we
-              remember who showed up early.
+              This is a personal digital grove for our early community members.
+              While this plot lives in your browser, every real sapling is financed through our <a href="#how-it-works" className="text-primary underline">50 = 5 Milestone Formula</a> and planted in offline forests across the globe.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-3 text-sm text-muted">
@@ -77,6 +76,32 @@ export function Grove() {
               <span className="tabular-nums text-fg">{shown.length}</span>
               <span>/ {MAX_PLANTS} planted</span>
             </span>
+            {shown.length > 0 && (
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => useGrove.getState().waterAll()}
+                className="text-xs"
+              >
+                <Droplets className="size-3.5 text-primary" />
+                Water all
+              </Button>
+            )}
+          </div>
+        </div>
+
+        {/* Prominent distinction callout */}
+        <div className="mt-6 rounded-2xl border border-primary/25 bg-primary/5 p-4 sm:p-5">
+          <div className="flex items-start gap-3">
+            <div className="size-6 shrink-0 rounded-full bg-primary/20 flex items-center justify-center text-primary mt-0.5">
+              <Sprout className="size-3.5" />
+            </div>
+            <div className="space-y-1 text-xs sm:text-sm leading-relaxed text-muted">
+              <span className="font-semibold text-fg">Grow Online, Plant Offline Distinction:</span>
+              <p>
+                Tapping the soil below nurtures your personal digital pledge. Real trees are not planted by clicking a screen — they are triggered by onchain market milestones and planted by our certified forestry partners. View the <a href="#impact-map" className="text-primary font-medium underline">Global Satellite Impact Map</a> to see real-world trees.
+              </p>
+            </div>
           </div>
         </div>
 
