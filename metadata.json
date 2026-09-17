@@ -1,0 +1,6 @@
+{
+  "name": "Sprout",
+  "description": "An onchain eco-native brand built around community, symbolism, and green momentum — bringing degens together to grow real-world forests.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
